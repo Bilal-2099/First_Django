@@ -1,4 +1,32 @@
 {% extends "base.html" %}
+{% load static %}
+{% comment %} style="height:400px; object-fit: cover; {% endcomment %}
+{% block title %}
+Home
+{% endblock title %}
+
 {% block body %}
-This is my body block
+<div class="container" my-4>
+    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'Laferrari.jpg' %}" class="d-block w-100" height="650" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Chevolet.jpg' %}" class="d-block w-100" height="650" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://article.images.consumerreports.org/image/upload/w_652,f_auto,q_auto,ar_16:9,c_lfill/v1731947043/prod/content/dam/CRO-Images-2024/Cars/CR-Cars-InlineHero-10-Most-Satisfying-Cars-and-SUVs-1124" class="d-block w-100" height="650" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
 {% endblock body %}

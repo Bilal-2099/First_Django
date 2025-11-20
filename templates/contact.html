@@ -1,9 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 Contact
 {% endblock title %}
 
 {% block body %}
-This is my contact block
+<div class="container">
+    <img src="{% static 'Phone car.jpg' %}" class="d-block w-100" height="450" alt="Contact Us">
+</div>
 {% endblock body %}

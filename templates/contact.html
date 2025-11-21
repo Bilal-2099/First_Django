@@ -17,7 +17,8 @@ Contact
     "> Get in Touch with Us!</h2>
 </div>
 <div class="d-flex justify-content-center align-items-center">
-<form>
+<form method="post" action="/contact">
+  {% csrf_token %}
   <div class="mb-3">
     <label for="Name" class="form-label">Name</label>
     <input type="text" class="form-control" id="Name" aria-describedby="Name">
